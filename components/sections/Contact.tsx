@@ -52,7 +52,7 @@ export default function Contact() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-16 text-gray-500 text-sm"
         >
-          <p className="mb-4">© 2024 Thomas Lo | 432 1 Music. All rights reserved.</p>
+          <p className="mb-4">© 2026 Thomas Lo | 432 1 Music. All rights reserved.</p>
           <p className="text-xs">
             Sound Engineer & Immersive Art Curator | Hong Kong
           </p>

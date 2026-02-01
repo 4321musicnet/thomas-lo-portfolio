@@ -15,7 +15,7 @@ export default function AlternatingText() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((current) => (current + 1) % phrases.length);
-    }, 5000); // Change every 7 seconds
+    }, 4000); // Change every 4 seconds
 
     return () => clearInterval(interval);
   }, []);

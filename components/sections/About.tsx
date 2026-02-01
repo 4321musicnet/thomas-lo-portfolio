@@ -93,7 +93,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="glass rounded-2xl p-8">
+            {/* <div className="glass rounded-2xl p-8">
               <h3 className="text-2xl font-bold mb-4 text-purple-300">Notable Collaborations</h3>
               <div className="flex flex-wrap gap-2">
                 {["Eason Chan", "Karen Mok", "Terence Lam", "Chet Lam", "Hong Kong Philharmonic Orchestra"].map((artist) => (
@@ -105,14 +105,14 @@ export default function About() {
                   </span>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             <div className="glass rounded-2xl p-8 bg-gradient-to-br from-purple-900/20 to-transparent border-purple-500/30">
               <h3 className="text-xl font-bold mb-3">432 1 Music</h3>
               <p className="text-gray-300 leading-relaxed">
-                432 1 fuses the natural resonance of frequency with the power of singular, original vision. 
-                Thomas Lo bridges these realms, blending legendary analog precision with immersive digital art to create authentic, 
-                deeply human experiences that cut through the noise.
+                432 1 fuses the natural resonance of frequency with the power of singular, original vision. Thomas Lo bridges these realms, blending legendary analog precision with immersive digital art to create authentic, 
+                deeply human experiences that cut through the noise. From the intimacy of the recording studio to the scale of public installation, we orchestrate moments where invisible soundwaves become tangible, 
+                living environments.
               </p>
             </div>
           </motion.div>

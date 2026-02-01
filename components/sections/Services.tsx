@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 
 const services = [
   {
@@ -10,18 +11,21 @@ const services = [
     title: "Immersive Art Concert Curation",
     description: "Creating unforgettable visual-audio experiences that transport audiences into new dimensions of artistic expression.",
     tags: ["Curation", "Immersive", "Live"],
+    image: "/services/immersive-art.jpg",
   },
   {
     id: 2,
     title: "Audio Consultancy",
     description: "Expert technical advice for venues and institutions including HKBU and HKAPA. Elevating audio infrastructure.",
     tags: ["Consulting", "Technical", "Education"],
+    image: "/services/immersive-sound.jpg",
   },
   {
     id: 3,
     title: "Multitrack Music Recording and Mixing",
     description: "High-end pop and jazz mixing delivered online. Precision engineering for artists seeking professional sound.",
-    tags: ["Remote", "Pop", "Jazz"],
+    tags: ["Remote", "Recording", "Mixing"],
+    image: "/services/recording.jpg",
   },
 ];
 
@@ -66,21 +70,36 @@ export default function Services() {
               animate={isInView ? "visible" : "hidden"}
               variants={cardVariants}
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
-              className="glass rounded-2xl p-8 group cursor-pointer hover:bg-white/10 transition-colors"
+              className="glass rounded-2xl overflow-hidden group cursor-pointer hover:bg-white/10 transition-colors"
             >
-              <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
-              <p className="text-gray-400 leading-relaxed mb-6">
-                {service.description}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {service.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-sm px-3 py-1 rounded-full bg-white/5 text-gray-300 border border-white/10"
-                  >
-                    {tag}
-                  </span>
-                ))}
+              {/* Service Image */}
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  sizes="33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              </div>
+              
+              {/* Service Content */}
+              <div className="p-8">
+                <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
+                <p className="text-gray-400 leading-relaxed mb-6">
+                  {service.description}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {service.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-sm px-3 py-1 rounded-full bg-white/5 text-gray-300 border border-white/10"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </motion.div>
           ))}

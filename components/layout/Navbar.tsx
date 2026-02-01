@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { name: "Work", href: "#work" },
+  { name: "Works", href: "#work" },
   { name: "Services", href: "#services" },
   { name: "About", href: "#about" },
   { name: "Contact", href: "#contact" },

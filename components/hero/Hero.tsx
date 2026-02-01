@@ -1,12 +1,28 @@
 "use client";
 
+import Image from "next/image";
 import AlternatingText from "./AlternatingText";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
-      {/* Background gradient effect */}
-      <div className="absolute inset-0 bg-gradient-radial from-purple-900/10 via-transparent to-transparent opacity-50" />
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/hero/hero-background.jpg"
+          alt="Thomas Lo Studio Background"
+          fill
+          className="object-cover"
+          priority
+          quality={90}
+        />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/60" />
+      </div>
+      
+      {/* Gradient overlay for depth and brand */}
+      <div className="absolute inset-0 bg-gradient-radial from-purple-900/20 via-transparent to-transparent z-[1]" />
       
       <div className="relative z-10 max-w-5xl mx-auto text-center">
         <AlternatingText />
