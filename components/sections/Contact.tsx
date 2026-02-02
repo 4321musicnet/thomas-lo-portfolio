@@ -35,7 +35,7 @@ export default function Contact() {
                 <p className="text-gray-400 text-sm mb-2">Email</p>
                 <a
                   href="mailto:info@4321music.com"
-                  className="text-xl font-medium hover:text-purple-400 transition-colors"
+                  className="font-medium hover:text-purple-400 transition-colors"
                 >
                   thomas@4321music.net
                 </a>

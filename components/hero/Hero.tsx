@@ -27,8 +27,8 @@ export default function Hero() {
       <div className="relative z-10 max-w-5xl mx-auto text-center">
         <AlternatingText />
         
-        <div className="mt-12 text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
-          <p>432 1 Music</p>
+        <div className="mt-12 text-gray-400 max-w-2xl mx-auto">
+          <p>Thomas Lo</p>
           <p className="mt-2">Award-Winning Sound Engineer</p>
         </div>
       </div>

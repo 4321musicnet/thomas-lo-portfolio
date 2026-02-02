@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+}
+
 @layer base {
   :root {
     --bg-primary: #050505;
@@ -15,7 +20,7 @@
   body {
     background: linear-gradient(to bottom, #050505 0%, #0a0a0a 100%);
     color: white;
-    font-family: var(--font-inter), system-ui, sans-serif;
+    font-family: var(--font-sans), system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
@@ -23,6 +28,39 @@
 
   html {
     scroll-behavior: smooth;
+  }
+
+  /* H1: Main Project Titles - "Collins" Style (Serif) */
+  h1 {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 6vw + 1rem, 7rem) !important; /* Huge on desktop, readable on mobile */
+    line-height: 1.0;
+    font-style: italic; /* The signature "Collins" look */
+    letter-spacing: -0.02em;
+  }
+
+  /* H2: Section Headers (e.g. Selected Works) */
+  h2 {
+    font-family: var(--font-sans); /* Keep technical headers clean sans-serif */
+    font-size: clamp(1.75rem, 4vw + 1rem, 3.75rem) !important;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+
+  /* H3: Card Titles */
+  h3 {
+    font-family: var(--font-sans);
+    font-size: clamp(1.25rem, 2vw + 1rem, 2rem) !important;
+    font-weight: 600;
+  }
+
+  /* P: Body Text */
+  p, li {
+    font-family: var(--font-sans);
+    font-size: clamp(1rem, 1vw + 0.5rem, 1.125rem); /* 16px to 18px range */
+    line-height: 1.6;
+    opacity: 0.9; /* Slightly softer white for better reading */
   }
 }
 

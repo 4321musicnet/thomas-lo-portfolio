@@ -21,7 +21,7 @@ export default function AlternatingText() {
   }, []);
 
   return (
-    <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[7rem] font-bold leading-[1.2] text-center tracking-tight overflow-visible">
+    <h1 className="!font-sans !not-italic !text-5xl !sm:text-6xl !md:text-7xl !lg:text-8xl !xl:text-[7rem] font-bold leading-[1.2] text-center tracking-tight overflow-visible">
       <span className="block text-white">{phrases[index].text}</span>
       <AnimatePresence mode="wait">
         <motion.span

@@ -15,15 +15,15 @@ const services = [
   },
   {
     id: 2,
-    title: "Audio Consultancy",
-    description: "Expert technical advice for venues and institutions including HKBU and HKAPA. Elevating audio infrastructure.",
+    title: "Immersive Design & Consultancy",
+    description: "Design consultant for HKBU’s White Box Experimental Space. Currently lecturing in Creative Coding at HKAPA, providing expert technical guidance for immersive projection systems and innovative institutional audio infrastructure.",
     tags: ["Consulting", "Technical", "Education"],
     image: "/services/immersive-sound.jpg",
   },
   {
     id: 3,
     title: "Multitrack Music Recording and Mixing",
-    description: "High-end pop and jazz mixing delivered online. Precision engineering for artists seeking professional sound.",
+    description: "From classical and jazz nuances to high-impact pop, I provide remote precision engineering and multitrack mixing. My seamless online workflow delivers professional, industry-standard productions while preserving your unique artistic intent.",
     tags: ["Remote", "Recording", "Mixing"],
     image: "/services/recording.jpg",
   },
@@ -55,8 +55,8 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-4">Services</h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <h2 className="mb-4">Services</h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">
             Comprehensive audio solutions from studio to stage
           </p>
         </motion.div>
@@ -86,7 +86,7 @@ export default function Services() {
               
               {/* Service Content */}
               <div className="p-8">
-                <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
+                <h3 className="mb-3">{service.title}</h3>
                 <p className="text-gray-400 leading-relaxed mb-6">
                   {service.description}
                 </p>

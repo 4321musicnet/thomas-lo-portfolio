@@ -17,7 +17,7 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-4">About Thomas Lo</h2>
+          <h2 className="mb-4">About Thomas Lo</h2>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -28,9 +28,9 @@ export default function About() {
             className="space-y-6"
           >
             <div className="glass rounded-2xl p-8">
-              <h3 className="text-2xl font-bold mb-4 text-purple-300">Profile</h3>
+              <h3 className="mb-4 text-purple-300">Profile</h3>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Thomas Lo is the Director of <span className="text-white font-semibold">432 1 Music</span> and 
+                Thomas Lo is the Director of <span className="text-white font-semibold">432 1 Music</span> and
                 a Recording Engineer at <span className="text-white font-semibold">Q2 Sound Studio</span>.
               </p>
               <p className="text-gray-300 leading-relaxed mb-4">
@@ -45,7 +45,7 @@ export default function About() {
             </div>
 
             <div className="glass rounded-2xl p-8">
-              <h3 className="text-2xl font-bold mb-4 text-purple-300">Teaching & Education</h3>
+              <h3 className="mb-4 text-purple-300">Teaching & Education</h3>
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start gap-3">
                   <span className="text-purple-400 mt-1 flex-shrink-0">•</span>
@@ -70,7 +70,7 @@ export default function About() {
             className="space-y-6"
           >
             <div className="glass rounded-2xl p-8">
-              <h3 className="text-2xl font-bold mb-4 text-purple-300">Expertise</h3>
+              <h3 className="mb-4 text-purple-300">Expertise</h3>
               <div className="grid grid-cols-2 gap-3">
                 <div className="bg-white/5 rounded-lg p-4 text-center border border-white/10">
                   <p className="text-sm text-gray-300 font-medium">Multitrack Mixing</p>
@@ -108,7 +108,7 @@ export default function About() {
             </div> */}
 
             <div className="glass rounded-2xl p-8 bg-gradient-to-br from-purple-900/20 to-transparent border-purple-500/30">
-              <h3 className="text-xl font-bold mb-3">432 1 Music</h3>
+              <h3 className="mb-3">432 1 Music</h3>
               <p className="text-gray-300 leading-relaxed">
                 432 1 fuses the natural resonance of frequency with the power of singular, original vision. Thomas Lo bridges these realms, blending legendary analog precision with immersive digital art to create authentic, 
                 deeply human experiences that cut through the noise. From the intimacy of the recording studio to the scale of public installation, we orchestrate moments where invisible soundwaves become tangible, 
