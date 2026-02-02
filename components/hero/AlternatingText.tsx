@@ -8,7 +8,7 @@ export default function AlternatingText() {
   
   const phrases = [
     { text: "We make", highlight: "immersive art" },
-    { text: "We make", highlight: "sound engineering" },
+    { text: "We make", highlight: "spatial audio" },
     { text: "We make", highlight: "concert curation" }
   ];
 
@@ -21,7 +21,7 @@ export default function AlternatingText() {
   }, []);
 
   return (
-    <h1 className="!font-sans !not-italic !text-5xl !sm:text-6xl !md:text-7xl !lg:text-8xl !xl:text-[7rem] font-bold leading-[1.2] text-center tracking-tight overflow-visible">
+    <h1 className="!font-sans !not-italic !text-3xl !sm:text-5xl !md:text-7xl !lg:text-8xl !xl:text-[7rem] font-bold leading-[1.2] text-center tracking-tight overflow-visible">
       <span className="block text-white">{phrases[index].text}</span>
       <AnimatePresence mode="wait">
         <motion.span

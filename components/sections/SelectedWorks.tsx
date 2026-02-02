@@ -153,7 +153,7 @@ export default function SelectedWorks() {
                   
                   {/* Year Badge */}
                   <div className="absolute top-4 left-4 z-10">
-                    <span className="text-sm px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 backdrop-blur-sm">
+                    <span className="text-xs md:text-sm px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 backdrop-blur-sm">
                       {work.year}
                     </span>
                   </div>
@@ -173,13 +173,13 @@ export default function SelectedWorks() {
                       initial={false}
                       className="transform transition-transform duration-500 group-hover:-translate-y-2"
                     >
-                      <h3 className="mb-2 text-white">
+                      <h3 className="mb-2 text-white !text-lg md:!text-2xl">
                         {work.title}
                       </h3>
-                      <p className="text-purple-400 font-medium mb-1">{work.role}</p>
-                      <p className="text-gray-300">{work.type}</p>
+                      <p className="text-purple-400 font-medium mb-1 !text-sm md:!text-base">{work.role}</p>
+                      <p className="text-gray-300 !text-xs md:!text-sm">{work.type}</p>
                       {work.venue && (
-                        <p className="text-gray-400 mt-2">{work.venue}</p>
+                        <p className="text-gray-400 mt-2 !text-xs md:!text-sm">{work.venue}</p>
                       )}
                     </motion.div>
                   </div>
