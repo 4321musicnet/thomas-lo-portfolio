@@ -28,8 +28,8 @@ export default function Hero() {
         <AlternatingText />
         
         <div className="mt-12 text-gray-400 max-w-2xl mx-auto">
-          <p>Thomas Lo</p>
-          <p className="mt-2">Award-Winning Sound Engineer</p>
+          <p className="text-sm md:text-base">Thomas Lo</p>
+          <p className="text-xs md:text-sm mt-2">Award-Winning Sound Engineer</p>
         </div>
       </div>
     </section>
